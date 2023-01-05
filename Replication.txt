@@ -1,0 +1,11 @@
+Postgresql replication :-
+
+1. There should be minimum 2 servers ( primary & secondary )
+2. Primary server is the main production server and secondary server acts as a backup server of the replicated production server.
+3. Purpose of replication is to act when the production server ( main ) goes down then there is election between the replicated backup servers that who will become the primary server temporarily.
+4. The elected secondary server acts as a primary server and the next replica server acts as a secondary server.
+5. Once the main primary server is fixed and up then he again gains his position as a primary server and others as secondary replica servers as earlier.
+
+Mongo replication :-
+1. Mongo replication is same as above but with additional server known as arbiter.
+2. Arbiter server acts as an candidate in the election of server whose presence matters than that of its contribution in election.
